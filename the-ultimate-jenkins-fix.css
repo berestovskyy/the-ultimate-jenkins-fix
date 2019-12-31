@@ -1,0 +1,33 @@
+/*
+ * The Ultimate Jenkins Fix
+ * by Andriy Berestovskyy <berestovskyy@gmail.com>
+ */
+
+#pipeline-box .table-box tr.UNSTABLE .cell-color,
+#pipeline-box .table-box tr.FAILED .cell-color {
+    background: rgba(0, 255, 0, 0.1) !important;
+}
+
+#pipeline-box .table-box tr.FAILED .FAILED .duration {
+    background: repeating-linear-gradient(-45deg, rgba(50, 255, 0, 0.1), rgba(50, 255, 0, 0.1) 20px, rgba(0, 255, 0, 0.15) 20px, rgba(0, 255, 0, 0.15) 40px) !important;
+}
+
+.jobsTable .UNSTABLE .jobName .badge,
+.jobsTable .FAILED .jobName .badge {
+    background: #89AED1 !important;
+}
+
+.jobsTable .stage-cell.FAILED .stage-wrapper {
+    color: inherit !important;
+}
+.jobsTable .stage-cell.FAILED .stage-wrapper .status {
+    display: none;
+}
+
+.cbwf-popover .alert {
+    visibility: hidden !important;
+}
+
+div.build-icon {
+    visibility: hidden;
+}
